@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../public/javascripts/jquery.js"></script>
+</head>
+<body>
+<input type="checkbox" id="btn"/>全选<br/>
+<input type="checkbox" class="a">aaaa<br/>
+<input type="checkbox" class="a">aaaa<br/>
+<input type="checkbox" class="a">aaaa<br/>
+<input type="checkbox" class="a">aaaa<br/>
+<script>
+
+    $('#btn').click(function(){
+
+        if($(this).is(':checked')){
+            $('.a').prop('checked','checked');
+        }else{
+            $('.a').prop('checked',false);
+        }
+    });
+</script>
+</body>
+</html>
